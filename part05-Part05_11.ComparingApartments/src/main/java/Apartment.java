@@ -13,16 +13,6 @@ public class Apartment {
 
     public boolean largerThan(Apartment compared) {
 
-        // first compare rooms.
-
-        if (this.rooms > compared.rooms) {
-            return true;
-        }
-        if (this.rooms < compared.rooms) {
-            return false;
-        }
-        // second compare square.
-
         if (this.squares > compared.squares) {
             return true;
         }
@@ -47,8 +37,9 @@ public class Apartment {
 
         if (thisApartmentPrice > comparedApartmentPrice) {
             return true;
+        } else {
+            return false;
         }
-        return false;
     }
 
 }
